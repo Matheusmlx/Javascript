@@ -1,3 +1,4 @@
+import './componenteHook.css'
 import React, { useState, useEffect } from 'react'
 
 export default () => {
@@ -10,7 +11,7 @@ export default () => {
     })
 
     return(
-        <div>
+        <div className='Card'>
             <p>You clicked times</p>
             <button onClick={() => setCount(count + 1)}>
                 Click me

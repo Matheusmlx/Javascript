@@ -1,3 +1,4 @@
+import './componenteHook.css'
 import {useState} from 'react'
 
 export default () => {
@@ -5,11 +6,9 @@ export default () => {
     const [fruit,setFruit] = useState('banana')
 
     return(
-        <div>
-            <ul>
-                <li>Primeiro State {idade} </li>
-                <li>Segundo State  {fruit}</li>
-            </ul>
+        <div className="Card">
+            <p>Primeiro State {idade} </p>
+            <p>Segundo State  {fruit}</p>
             <button onClick={() => setIdade(idade + 1)}>Click me</button>
         </div>
     )
